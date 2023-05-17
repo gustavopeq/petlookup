@@ -7,4 +7,5 @@ object Constants {
     const val ANIMALS_URL = "animals"
     const val AUTH_HEADER_NAME = "Authorization"
     const val AUTH_BEARER_PREFIX = "Bearer"
+    const val USER_TOKEN = "user_token"
 }

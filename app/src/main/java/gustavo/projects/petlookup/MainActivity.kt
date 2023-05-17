@@ -2,8 +2,10 @@ package gustavo.projects.petlookup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import dagger.hilt.android.AndroidEntryPoint
 import gustavo.projects.petlookup.ui.main.MainFragment
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
