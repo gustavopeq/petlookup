@@ -4,6 +4,7 @@ import gustavo.projects.petlookup.network.models.AnimalsResponse
 import gustavo.projects.petlookup.network.models.UserTokenRequest
 import gustavo.projects.petlookup.network.models.UserTokenResponse
 import retrofit2.Call
+import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
@@ -13,8 +14,8 @@ import retrofit2.http.POST
 interface ApiService {
 
     @POST(Constants.TOKEN_URL)
-    fun getToken(@Body request: UserTokenRequest): Call<UserTokenResponse>
+    suspend fun getToken(@Body request: UserTokenRequest): Response<UserTokenResponse>
 
     @GET(Constants.ANIMALS_URL)
-    fun fetchAnimals(): Call<AnimalsResponse>
+    fun fetchAnimals(): Response<AnimalsResponse>
 }
