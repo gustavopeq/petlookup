@@ -1,12 +1,12 @@
-package gustavo.projects.petlookup.network
+package gustavo.projects.petlookup.network.utils
 
 import retrofit2.Response
 import java.lang.Exception
 
 data class SimpleResponse<T>(
-        val status: Status,
-        val data: Response<T>?,
-        val exception: Exception?
+    val status: Status,
+    val data: Response<T>?,
+    val exception: Exception?
 ){
 
     companion object {

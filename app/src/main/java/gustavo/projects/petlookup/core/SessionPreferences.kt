@@ -1,7 +1,7 @@
 package gustavo.projects.petlookup.core
 
 import android.content.SharedPreferences
-import gustavo.projects.petlookup.network.Constants.USER_TOKEN
+import gustavo.projects.petlookup.network.utils.Constants.USER_TOKEN
 import javax.inject.Inject
 
 class SessionPreferences @Inject constructor(

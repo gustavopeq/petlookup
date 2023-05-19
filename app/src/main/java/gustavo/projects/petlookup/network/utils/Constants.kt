@@ -1,4 +1,4 @@
-package gustavo.projects.petlookup.network
+package gustavo.projects.petlookup.network.utils
 
 object Constants {
 

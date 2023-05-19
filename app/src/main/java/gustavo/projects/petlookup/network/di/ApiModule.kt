@@ -1,13 +1,12 @@
-package gustavo.projects.petlookup.network.di.module
+package gustavo.projects.petlookup.network.di
 
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import gustavo.projects.petlookup.core.SessionPreferences
-import gustavo.projects.petlookup.network.ApiService
 import gustavo.projects.petlookup.network.AuthInterceptor
-import gustavo.projects.petlookup.network.Constants
+import gustavo.projects.petlookup.network.utils.Constants
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

@@ -1,10 +1,9 @@
-package gustavo.projects.petlookup.network.di.module
+package gustavo.projects.petlookup.network.di
 
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import gustavo.projects.petlookup.network.ApiClient
 import gustavo.projects.petlookup.network.ApiService
 import retrofit2.Retrofit
 import javax.inject.Singleton
@@ -15,9 +14,7 @@ object ServiceModule {
 
     @Provides
     @Singleton
-    fun providePetfinderApiService(retrofit: Retrofit): ApiClient {
-        val apiService = retrofit.create(ApiService::class.java)
-
-        return ApiClient(apiService)
+    fun providePetfinderApiService(retrofit: Retrofit): ApiService {
+        return retrofit.create(ApiService::class.java)
     }
 }

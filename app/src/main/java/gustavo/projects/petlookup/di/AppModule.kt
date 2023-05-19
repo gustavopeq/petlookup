@@ -1,4 +1,4 @@
-package gustavo.projects.petlookup.core.di
+package gustavo.projects.petlookup.di
 
 import android.content.Context
 import android.content.SharedPreferences

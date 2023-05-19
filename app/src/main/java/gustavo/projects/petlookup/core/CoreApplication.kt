@@ -2,8 +2,8 @@ package gustavo.projects.petlookup.core
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
-import gustavo.projects.petlookup.network.ApiClient
 import gustavo.projects.petlookup.network.models.UserTokenRequest
+import gustavo.projects.petlookup.repositories.token.TokenRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -13,7 +13,7 @@ import javax.inject.Inject
 class CoreApplication: Application() {
 
     @Inject
-    lateinit var apiClient: ApiClient
+    lateinit var tokenRepository: TokenRepository
 
     @Inject
     lateinit var sessionPreferences: SessionPreferences
@@ -23,7 +23,7 @@ class CoreApplication: Application() {
         super.onCreate()
 
         CoroutineScope(Dispatchers.Main).launch {
-            val tokenRequest = apiClient.getToken(UserTokenRequest())
+            val tokenRequest = tokenRepository.getToken(UserTokenRequest())
 
             if (tokenRequest.failed || !tokenRequest.isSuccessful) {
                 println("PRINT - Token request failed!")
