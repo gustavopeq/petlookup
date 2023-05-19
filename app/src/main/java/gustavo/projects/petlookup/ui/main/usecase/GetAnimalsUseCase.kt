@@ -1,6 +1,6 @@
 package gustavo.projects.petlookup.ui.main.usecase
 
-import gustavo.projects.petlookup.network.models.Animals
+import gustavo.projects.petlookup.models.Animals
 import gustavo.projects.petlookup.repositories.animals.AnimalsRepository
 import javax.inject.Inject
 

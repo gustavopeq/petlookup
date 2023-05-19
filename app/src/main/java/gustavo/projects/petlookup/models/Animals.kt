@@ -1,4 +1,4 @@
-package gustavo.projects.petlookup.network.models
+package gustavo.projects.petlookup.models
 
 import com.google.gson.annotations.SerializedName
 
@@ -12,5 +12,9 @@ data class Animals(
     @SerializedName("age")
     var age: String?,
     @SerializedName("gender")
-    var gender: String?
+    var gender: String?,
+    @SerializedName("name")
+    var name: String?,
+    @SerializedName("breeds")
+    var breeds: Breeds?
 )

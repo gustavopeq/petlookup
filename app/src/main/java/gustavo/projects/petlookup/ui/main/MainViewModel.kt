@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import gustavo.projects.petlookup.network.models.Animals
+import gustavo.projects.petlookup.models.Animals
 import gustavo.projects.petlookup.ui.main.usecase.GetAnimalsUseCase
 import kotlinx.coroutines.launch
 import javax.inject.Inject

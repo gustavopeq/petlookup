@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import gustavo.projects.petlookup.R
-import gustavo.projects.petlookup.network.models.Animals
+import gustavo.projects.petlookup.models.Animals
 
 class AnimalsAdapter(
     private val listOfAnimals: MutableList<Animals>
@@ -28,9 +28,13 @@ class AnimalsAdapter(
 }
 
 class AnimalsViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-    private val animalId: TextView = itemView.findViewById(R.id.animalId)
+    private val animalName: TextView = itemView.findViewById(R.id.animalName)
+    private val animalBreed: TextView = itemView.findViewById(R.id.animalBreed)
+    private val animalAge: TextView = itemView.findViewById(R.id.animalAge)
 
     fun bindView(animals: Animals) {
-        animalId.text = animals.id.toString()
+        animalName.text = animals.name
+        animalBreed.text = animals.breeds?.primary
+        animalAge.text = animals.age
     }
 }
