@@ -2,7 +2,7 @@ package gustavo.projects.petlookup.core
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
-import gustavo.projects.petlookup.network.models.UserTokenRequest
+import gustavo.projects.petlookup.network.models.auth.UserTokenRequest
 import gustavo.projects.petlookup.repositories.token.TokenRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

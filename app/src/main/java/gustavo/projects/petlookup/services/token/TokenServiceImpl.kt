@@ -1,8 +1,8 @@
 package gustavo.projects.petlookup.services.token
 
 import gustavo.projects.petlookup.network.ApiService
-import gustavo.projects.petlookup.network.models.UserTokenRequest
-import gustavo.projects.petlookup.network.models.UserTokenResponse
+import gustavo.projects.petlookup.network.models.auth.UserTokenRequest
+import gustavo.projects.petlookup.network.models.auth.UserTokenResponse
 import retrofit2.Response
 import javax.inject.Inject
 

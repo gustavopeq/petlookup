@@ -1,4 +1,4 @@
-package gustavo.projects.petlookup.network.models
+package gustavo.projects.petlookup.network.models.auth
 
 import com.google.gson.annotations.SerializedName
 

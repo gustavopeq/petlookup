@@ -2,7 +2,7 @@ package gustavo.projects.petlookup.services.animals
 
 import gustavo.projects.petlookup.network.ApiService
 import gustavo.projects.petlookup.network.utils.SimpleResponse
-import gustavo.projects.petlookup.network.models.AnimalsResponse
+import gustavo.projects.petlookup.network.models.content.AnimalsResponse
 import gustavo.projects.petlookup.network.utils.safeApiCall
 import javax.inject.Inject
 
